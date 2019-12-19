@@ -12,6 +12,9 @@ public class TestApp extends Application {
 		// TODO Auto-generated method stub
 		
 		ListSelector<String> listSelector = new ListSelector<String>();
+		DateChooser dateChooser = new DateChooser();
+		
+		
 		
 		listSelector.setLeftTitle("Jugadores");
 		listSelector.getLeftItems().addAll(
@@ -24,7 +27,7 @@ public class TestApp extends Application {
 		listSelector.setRightTitle("Participantes");
 		
 		BorderPane root = new BorderPane();
-		root.setCenter(listSelector);
+		root.setCenter(dateChooser);
 		
 		Scene scene = new Scene(root, 640, 480);
 		primaryStage.setTitle("Custom components test app");
